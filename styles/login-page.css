@@ -1,0 +1,60 @@
+.t-PageBody--login {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(#APP_FILES#login.jpg);
+  background-size: 100% Auto;
+  background-repeat: no-repeat;
+}
+
+#P9999_NEW_DISPLAY {
+  border: none;
+}
+
+.t-Form-label {
+  color: #FFFFFF;
+  font-size: 100px !important;
+  /* font-weight: 700 !important; */
+  font-family: 'Barlow';
+  /* word-break: break-all; */
+  line-height: unset;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  margin-left: 200px;
+
+  font-style: normal;
+  font-weight: 700;
+}
+.col-7>.rel-col .col-5 {
+  flex-basis: 71.4285714286%;
+  max-width: 71.4285714286%;
+}
+
+.t-Login-title {
+  display: none;
+}
+
+.t-Login-region {
+  background-color: #EDDBC0;
+}
+
+.t-Login-logo {
+  width: 205px;
+  height: 151px;
+  mix-blend-mode: multiply;
+}
+
+#B68991479693160434302 {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  color: #5096FF;
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+#B68930328379823959366 {
+  background: #B73E3E;
+}
