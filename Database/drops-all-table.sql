@@ -7,7 +7,7 @@ SET @tables = NULL;
 SELECT GROUP_CONCAT('`', table_name, '`') INTO @tables
 FROM information_schema.tables
 WHERE table_type = 'BASE TABLE'
-  AND table_schema = 'LIBRARY_MANAGEMENT';
+  AND table_schema = @DATABASE;
 SELECT IFNULL(@tables, 'dummy') INTO @tables;
 
 SET @tables = CONCAT('DROP TABLE IF EXISTS ', @tables);
