@@ -1,8 +1,8 @@
 CREATE TABLE STUDENT (
   email VARCHAR(30) PRIMARY KEY,
-  s_password VARCHAR(30) NOT NULL,
-  s_role ENUM("Student", "Teacher", "Admin") NOT NULL,
-  s_name VARCHAR(30) NOT NULL,
+  u_password VARCHAR(30) NOT NULL,
+  u_role ENUM("Student", "Teacher", "Admin") NOT NULL,
+  u_name VARCHAR(30) NOT NULL,
   fine_rate DECIMAL(18, 2),
   total_days INT NOT NULL,
   FOREIGN KEY (email) REFERENCES USER(email) ON DELETE CASCADE,
@@ -11,13 +11,14 @@ CREATE TABLE STUDENT (
     AND total_days > 0
   ),
   CHECK (fine_rate = 0.02),
-  CHECK (s_role = 'Student')
+  CHECK (u_role = 'Student')
 );
 ALTER TABLE STUDENT
-ADD FOREIGN KEY S_CREDENTIAL(email, s_password, s_role) REFERENCES USER(
+ADD FOREIGN KEY S_CREDENTIAL(email, u_password, u_role, u_name) REFERENCES USER(
   email,
   u_password,
-  u_role
+  u_role,
+  u_name
 );
 
 -- DROP TABLE STUDENT;

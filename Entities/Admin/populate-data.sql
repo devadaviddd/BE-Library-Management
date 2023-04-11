@@ -5,4 +5,11 @@ INSERT INTO ADMIN VALUES (
   'Admin name'
 );
 
+INSERT INTO ADMIN VALUES (
+  'admin1@gmail.com',
+  'pass123',
+  'Admin',
+  'Admin name'
+);
+
 SELECT * FROM ADMIN;
