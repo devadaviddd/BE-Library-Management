@@ -7,7 +7,7 @@ SELECT table_name,
     non_unique,
     index_type
 FROM information_schema.statistics
-WHERE table_schema = 'LIBRARY_MANAGEMENT'
+WHERE table_schema = @DATABASE
 GROUP BY table_name,
     index_name,
     non_unique,

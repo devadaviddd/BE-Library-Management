@@ -1,0 +1,10 @@
+CREATE TABLE BOOK (
+  ID INT PRIMARY KEY,
+  title VARCHAR(30) NOT NULL,
+  author VARCHAR(30),
+  num_stock INT,
+  category ENUM ('FICTION', 'NON-FICTION', 'MYSTERY', 'ROMANCE', 
+  'THRILLER')
+);
+
+DROP TABLE BOOK;
