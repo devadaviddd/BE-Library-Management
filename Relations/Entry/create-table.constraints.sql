@@ -18,9 +18,9 @@ CREATE TABLE ENTRY (
 
 CREATE TABLE USER_JOIN_TABLE
 SELECT USER.email AS email,
-  u_role AS u_role,
-  s_name AS s_name,
-  t_name AS t_name,
+  USER.u_role AS u_role,
+  STUDENT.u_name AS s_u_name,
+  TEACHER.u_name AS t_u_name,
   STUDENT.fine_rate AS s_fine_rate,
   TEACHER.fine_rate AS t_fine_rate,
   STUDENT.total_days AS s_total_days,
