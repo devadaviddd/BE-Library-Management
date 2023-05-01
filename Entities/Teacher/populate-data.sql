@@ -1,21 +1,9 @@
-INSERT INTO TEACHER VALUES (
-  'teacher@gmail.com',
-  'pass123',
-  'Teacher',
-  'Teacher name',
-  0.03,
-  8
+INSERT INTO TEACHER_ENTITY VALUES (
+  'teacher@gmail.com', 'pass123', 'Teacher', 'teacher name', 0.03, 14, 5, 0
 );
-
-INSERT INTO TEACHER VALUES (
-  'teacher1@gmail.com',
-  'pass123',
-  'Teacher',
-  'Teacher name',
-  0.03,
-  8
+INSERT INTO TEACHER_ENTITY VALUES (
+  'teacher2@gmail.com', 'pass123', 'Teacher', 'teacher name', 0.03, 14, 5, 0
 );
-
-SELECT * FROM TEACHER;
-
-DELETE FROM TEACHER;
+INSERT INTO TEACHER_ENTITY VALUES (
+  'teacher3@gmail.com', 'pass123', 'Teacher', 'teacher name', 0.03, 14, 5, 0
+);

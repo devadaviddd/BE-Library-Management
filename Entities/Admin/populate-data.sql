@@ -12,4 +12,3 @@ INSERT INTO ADMIN VALUES (
   'Admin name'
 );
 
-SELECT * FROM ADMIN;
