@@ -1,12 +1,11 @@
 INSERT INTO BOOK 
-VALUES (1, 'Book1', 'Author1', NULL, 'FICTION');
+VALUES (NULL, 'Book1', 'Author1', 'FICTION', NULL, NULL, NULL, NULL, 'Available');
 INSERT INTO BOOK 
-VALUES (2, 'Book2', 'Author2', NULL, 'NON-FICTION');
+VALUES (NULL, 'Book2', 'Author2', 'NON-FICTION', NULL, NULL, NULL, NULL, 'Available');
 INSERT INTO BOOK 
-VALUES (3, 'Book3', 'Author3', NULL, 'MYSTERY');
+VALUES (NULL, 'Book3', 'Author3', 'MYSTERY', NULL, NULL, NULL, NULL, 'Available');
 INSERT INTO BOOK 
-VALUES (4, 'Book4', 'Author4', NULL, 'ROMANCE');
+VALUES (NULL, 'Book4', 'Author4', 'ROMANCE', NULL, NULL, NULL, NULL, 'Available');
 INSERT INTO BOOK 
-VALUES (5, 'Book1', 'Author1', NULL, 'ROMANCE');
-SELECT * FROM BOOK;
+VALUES (NULL, 'Book1', 'Author1', 'ROMANCE', NULL, NULL, NULL, NULL, 'Available');
 
