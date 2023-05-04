@@ -1,5 +1,5 @@
 CREATE TABLE TEACHER_ENTITY (
-  email VARCHAR(30) PRIMARY KEY,
+  email VARCHAR(30) PRIMARY KEY NOT NULL,
   u_password VARCHAR(30) NOT NULL,
   u_role VARCHAR(10) NOT NULL CHECK (u_role IN ('Student', 'Teacher', 'Admin')),
   u_name VARCHAR(30) NOT NULL,
